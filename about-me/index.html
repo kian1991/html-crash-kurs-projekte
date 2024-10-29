@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <title>About Kian</title>
+  </head>
+  <style>
+    input {
+      display: block;
+    }
+
+    .btn {
+      padding: 0.7rem;
+      border: none;
+      background-color: teal;
+      color: white;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    .btn:hover {
+      background-color: rgba(0, 128, 128, 0.727);
+      border: 1px solid black;
+    }
+
+    .btn::after {
+      content: '23';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      background-color: red;
+      padding: 0.2rem;
+      border-radius: 50%;
+    }
+
+    .box {
+      height: 50px;
+      width: 50px;
+      background-color: lightgreen;
+    }
+
+    .box::after {
+      content: 'after';
+      height: 50px;
+      width: 50px;
+      background-color: rgb(112, 103, 162);
+    }
+
+    .box::before {
+      content: 'before';
+      height: 50px;
+      width: 50px;
+      background-color: rgb(162, 147, 103);
+    }
+  </style>
+  <body>
+    <h1 id="main-header">Kian Lütke</h1>
+    <img src="assets/seal.webP" height="300" alt="Kleine Kugelrobbe" title="Kleine Kugelrobbe" />
+    <p>
+      Ich bin Kian und Trainer für FullStack an der VW-Universität. Meine Lieblingstiere sind Robben 🦭 Und ich esse
+      ziemlich gerne.
+    </p>
+    <form action="">
+      <input type="text" name="name" id="name" placeholder="Name..." />
+      <input type="number" name="age" id="age" placeholder="Age..." />
+      <br />
+      <button class="btn" type="button">SEND</button>
+    </form>
+    <div class="box"></div>
+    <h2>Meine Hobbys:</h2>
+    <ul>
+      <li>Volleyball</li>
+      <li>Tischtennis</li>
+      <li>Kochen</li>
+      <li>Gym</li>
+      <li>Programmieren</li>
+    </ul>
+    <a href="https://youtube.com" title="Nicht Youtube 🌝" target="_blank">👉 YouTube</a>
+  </body>
+</html>

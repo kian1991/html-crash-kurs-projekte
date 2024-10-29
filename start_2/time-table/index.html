@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meine erste CSS-Übung</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <style>
+    input,
+    label {
+      display: block;
+      margin-block: 0.5rem;
+    }
+  </style>
+  <body>
+    <header>
+      <!-- NAVBAR -->
+      <!-- HERO -->
+      <!-- BANNER -->
+    </header>
+    <main>
+      <section id="contact">
+        <form>
+          <fieldset>
+            <legend>Persönliche Informationen</legend>
+            <label for="vorname">Vorname:</label>
+            <input type="text" id="vorname" name="vorname" />
+
+            <select name="country" id="country">
+              <option value="DE">Germany</option>
+              <option value="US">USA</option>
+            </select>
+
+            <label for="nachname">Nachname:</label>
+            <input type="text" id="nachname" name="nachname" />
+          </fieldset>
+        </form>
+      </section>
+      <!-- MAIN CONTENT -->
+      <section id="about-us">
+        <h1>About Us</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, libero commodi illo recusandae a beatae
+          nulla ut obcaecati vel reiciendis, ipsam molestiae expedita quisquam corporis repudiandae deserunt.
+          Consequuntur commodi quas optio suscipit libero impedit ullam asperiores rerum ea expedita?
+        </p>
+      </section>
+    </main>
+    <!-- Tabelle: Stundeplan mit teilweise Doppelstunden via rowspan -->
+    <table>
+      <thead>
+        <tr>
+          <th>Stunde</th>
+          <th>Montag</th>
+          <th>Dienstag</th>
+          <th>Mittwoch</th>
+          <th>Donnerstag</th>
+          <th>Freitag</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td rowspan="2">Deutsch</td>
+          <td>Mathe</td>
+          <td rowspan="2">Englisch</td>
+          <td>Geschichte</td>
+          <td rowspan="2">Sport</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Englisch</td>
+          <td>Mathe</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td colspan="5" style="text-align: center; background-color: salmon">Pause</td>
+          <!-- <td>Pause</td>
+          <td>Pause</td>
+          <td>Pause</td>
+          <td>Pause</td> -->
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Mathe</td>
+          <td rowspan="2">Deutsch</td>
+          <td>Mathe</td>
+          <td rowspan="2">Englisch</td>
+          <td>Deutsch</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Englisch</td>
+          <td>Mathe</td>
+          <td>Englisch</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Pause</td>
+          <td>Pause</td>
+          <td>Pause</td>
+          <td>Pause</td>
+          <td rowspan="3">Frei</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td rowspan="2">Physik</td>
+          <td>Biologie</td>
+          <td>Chemie</td>
+          <td rowspan="2">Physik</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Chemie</td>
+          <td>Physik</td>
+        </tr>
+      </tbody>
+    </table>
+    <footer></footer>
+  </body>
+</html>

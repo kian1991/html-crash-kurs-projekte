@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background-color: #f4f4f4;
+      padding: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    form input,
+    form textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      cursor: pointer;
+    }
+
+    #burger-button {
+      all: unset;
+      display: block;
+      width: 50px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .side-bar {
+      width: 0;
+      font-size: 2em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 2rem;
+      height: 100vh;
+      background: gainsboro;
+      opacity: 0;
+      transition: width ease 700ms;
+    }
+
+    nav:hover .side-bar {
+      width: 350px;
+      opacity: 1;
+    }
+
+    .side-bar > ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .side-bar > ul li:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Styles */
+    @media screen and (max-width: 768px) {
+      nav > ul li {
+        display: none;
+      }
+
+      #burger-button {
+        display: block;
+      }
+
+      .side-bar {
+        display: block;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+
+    footer {
+    }
+
+    @media screen and (min-width: 769px) {
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .side-bar {
+        display: none;
+      }
+
+      #burger-button {
+        display: none;
+      }
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="responsive-styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- SICHTBAR AUF DESKTOP -->
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Über uns</a></li>
+          <li><a href="#services">Dienstleistungen</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+        <!-- SICHTBAR AUF MOBIL -->
+        <button id="burger-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="white"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+        <div class="side-bar">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Über uns</a></li>
+            <li><a href="#services">Dienstleistungen</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1>Willkommen auf unserer Seite</h1>
+        <p>Entdecken Sie unsere fantastischen Angebote!</p>
+      </section>
+
+      <section id="about">
+        <h2>Über uns</h2>
+        <p>Wir sind ein innovatives Unternehmen mit Fokus auf Kundenzufriedenheit.</p>
+      </section>
+
+      <section id="services">
+        <h2>Unsere Dienstleistungen</h2>
+        <ul>
+          <li>Webdesign</li>
+          <li>Mobile App-Entwicklung</li>
+          <li>SEO-Optimierung</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Kontaktieren Sie uns</h2>
+        <form>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="E-Mail" />
+          <textarea placeholder="Ihre Nachricht"></textarea>
+          <button type="submit">Senden</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Meine Responsive Seite. Alle Rechte vorbehalten.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    html {
+      font-family: system-ui;
+    }
+
+    table,
+    td,
+    th {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 7px;
+    }
+  </style>
+  <body>
+    <table>
+      <caption>
+        Ein Stundenplan na na na ana 
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Zeit</th>
+          <th scope="col">Montag</th>
+          <th scope="col">Dienstag</th>
+          <th scope="col">Mittwoch</th>
+          <th scope="col">Donnerstag</th>
+          <th scope="col">Freitag</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">8:00 - 9:45</th>
+          <td rowspan="2">Mathe</td>
+          <td rowspan="2">Deutsch</td>
+          <td>Deutsch</td>
+          <td rowspan="2">Englisch</td>
+          <td rowspan="2">Englisch</td>
+        </tr>
+          <th>10:00 - 11:45</th>
+          <td>Englisch</td>
+        </tr>
+        </tr>
+          <th>12:00 - 13:45</th>
+          <td rowspan="2">Sport</td>
+          <td>Englisch</td>
+          <td>Geo</td>
+          <td rowspan="2">Sachkunde</td>
+          <td>Physik</td>
+        </tr>
+        </tr>
+          <th>13:00 - 14:45</th>
+          <td>Chemie</td>
+          <td rowspan="2">Thermodynamik</td>
+          <td rowspan="2">Informatik I</td>
+        </tr>
+        </tr>
+          <th>14:00 - 15:45</th>
+          <td></td>
+          <td>Thermodynamik</td>
+          <td>Informatik II</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Gesamtstunden</th>
+          <td align="center">5</td>
+          <td colspan="4" align="center">6</td>
+         
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

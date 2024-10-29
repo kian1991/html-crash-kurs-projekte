@@ -1,0 +1,188 @@
+/* Variables which are accessable everywhere in the document */
+:root {
+  --background-color: rgb(158, 245, 209);
+  --text-color: rgb(47, 46, 46);
+  --text-color-hover: rgb(0, 0, 0);
+}
+
+
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.stack>*+* {
+  margin-block-start: 1.5rem;
+}
+
+.flow>*+* {
+  margin-block-start: var(--flow-space, 1em);
+}
+
+/* Basic CSS Reset END */
+
+/* HELPER */
+.text-end {
+  text-align: end;
+}
+
+
+/* HELPER END */
+
+.nav-bar {
+  display: flex;
+  text-wrap: nowrap;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  padding: .5rem 3rem;
+}
+
+.nav-logo {
+  height: 70px;
+}
+
+.nav-logo img {
+  height: 100%;
+}
+
+.nav-links {
+  color: var(--text-color);
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: var(--text-color-hover);
+}
+
+/* BREAK POINT FOR MOBILE */
+@media screen and (max-width: 768px) {
+  .nav-logo {
+    display: none;
+  }
+
+  .nav-bar {
+    justify-content: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  html {
+    font-size: 10px;
+  }
+
+
+}
+
+
+
+.banner {
+  /* 10% of the viewport height */
+  height: 10vh;
+  background: #383838;
+  color: rgba(255, 255, 255, 0.553);
+  /* Center the text */
+  display: grid;
+  place-items: center;
+  /* Text Styles */
+  text-transform: uppercase;
+  font-style: oblique;
+  font-weight: 900;
+  font-size: 2em;
+  box-shadow: 0px 5px 9px -2px rgba(0, 0, 0, 0.5);
+}
+
+
+main {
+  /* background-image: url(/assets/colorful.jpg); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: rgba(128, 79, 103, 0.947);
+  padding: 2.5rem 2rem;
+  width: min(100%, 75ch);
+  backdrop-filter: blur(10px);
+  font-size: 10px;
+}
+
+.container h3 {
+  font-size: 1rem;
+}
+
+.grid {
+  padding: .5rem;
+  background-color: gainsboro;
+  margin: 2rem;
+  gap: 1rem;
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(1fr 1fr, 1fr))
+}
+
+.grid-item:nth-child(5) {
+  height: auto;
+  grid-column: 2 / 4;
+  grid-row: 2 / 4
+}
+
+.grid-item {
+  height: 250px;
+  width: 100%;
+}
+
+.grid-item>img {
+  border-radius: 3px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.salmon {
+  background-color: salmon;
+}
+
+.teal {
+  background-color: teal;
+}
+
+.skyblue {
+  background-color: skyblue;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.lime {
+  background-color: lime;
+}

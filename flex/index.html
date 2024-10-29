@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      background-color: gainsboro;
+      /* height: 100vh; */
+      gap: 1rem;
+    }
+    .flex-item {
+      height: 150px;
+      width: 150px;
+    }
+
+    .salmon {
+      background-color: salmon;
+    }
+
+    .teal {
+      background-color: teal;
+    }
+
+    .lightgreen {
+      background-color: lightgreen;
+    }
+
+    .lightblue {
+      background-color: lightblue;
+    }
+  </style>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item salmon"></div>
+      <div class="flex-item teal"></div>
+      <div class="flex-item lightgreen"></div>
+      <div class="flex-item lightblue"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+@font-face {
+  font-family: Topol;
+  src: url(./font/Topol-bold.woff2) format('woff');
+}
+
+/* Basic CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Topol, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+  line-height: 1.1;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+/* Basic CSS Reset END */
+
+/* VARS */
+:root {
+  --header-height: 50px;
+  --border: 0.5px solid rgba(0, 0, 0, 0.253);
+}
+
+/* HEADER */
+nav {
+  display: flex;
+  align-items: center;
+  padding-inline: 2rem;
+  height: var(--header-height);
+  border-bottom: var(--border);
+}
+
+nav > span {
+  /* LOGO */
+  font-weight: 900;
+  font-size: 1.25em;
+  letter-spacing: -1px;
+}
+
+nav > ul {
+  font-size: 0.6em;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav > ul > li:last-child {
+  position: relative;
+}
+
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: white;
+  padding: 0.5rem 0.7rem;
+  border: var(--border);
+}
+
+.nav-btn:hover + .nav-dropdown {
+  display: flex;
+}
+
+.nav-dropdown:hover {
+  display: flex;
+}
+
+/* HEADER END */
+
+/* GENERAL ELEMENTS */
+.btn {
+  border: none;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  text-wrap: nowrap;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-line: 2px;
+}
