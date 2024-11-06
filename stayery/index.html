@@ -9,8 +9,8 @@
   <body>
     <header>
       <nav>
-        <span> STAYERY. </span>
-        <ul>
+        <span class="logo"> STAYERY. </span>
+        <ul class="nav-links">
           <li>
             <a href="/places">STANDORTE</a>
           </li>
@@ -35,6 +35,195 @@
           </li>
         </ul>
       </nav>
+      <div class="hero">
+        <div class="hero-content">
+          <span>STAY VERY, VERY</span>
+          <span>EXTRAORDINARY</span>
+        </div>
+        <form class="order-form">
+          <select name="whereto" id="whereto">
+            <option value="">WOHIN?</option>
+            <option value="oldenburg">OLDENBURG</option>
+            <option value="wolfsburg">WOLFSBURG</option>
+            <option value="bremen">BREMEN</option>
+            <option value="hamburg">HAMBURG</option>
+            <option value="muenchen">MÜNCHEN</option>
+          </select>
+          <input type="date" name="date" id="date" />
+          <select name="person-count" id="person-count">
+            <option value="1">1 PERSON</option>
+            <option value="2">2 PERSONEN</option>
+            <option value="3">3 PERSONEN</option>
+          </select>
+          <input type="text" name="code" id="code" placeholder="CODE" />
+          <button class="btn btn-sm">JETZT BUCHEN</button>
+        </form>
+      </div>
     </header>
+    <main>
+      <section id="branches">
+        <div class="branch-description container">
+          <div>
+            <span>Unsere Standorte </span>
+            <span>Where are you going?</span>
+          </div>
+          <div>
+            <p>
+              Very, very good, dass Du hier bist! STAYERY verbindet für Dich den Komfort einer eigenen Wohnung mit dem
+              Service eines Hotels. Immer in zentraler Lage, in den spannendsten Städten. Immer genau das, was Du gerade
+              brauchst.
+            </p>
+            <br />
+            <p>
+              Worauf wartest Du? Buche Deinen Aufenthalt in Deiner STAYERY in sieben spannenden Städten. Und bald auch
+              an vielen weiteren Standorten. Für Deine nächste Städtereise oder einen produktiven Business Trip.
+            </p>
+          </div>
+          <div></div>
+        </div>
+        <div class="branch-grid">
+          <div>
+            <div class="branch-grid-item bg-stay-blue">
+              <h3>Berlin</h3>
+              <img src="assets/branches/branch_1.jpg" alt="a table in a nice room" />
+              <div>
+                <span>Take me there</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="branch-grid-item bg-stay-green">
+              <h3>Frankfurt</h3>
+              <img src="assets/branches/branch_2.jpg" alt="a table in a nice room" />
+              <div>
+                <span>Take me there</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- <div>
+            <div class="branch-grid-item">
+              <div class="circle">
+                <svg width="200" height="200">
+                  <defs>
+                    <path id="circlePath" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
+                  </defs>
+                  <text>
+                    <textPath href="#circlePath">SEE YOU VERY, VERY SOON.</textPath>
+                  </text>
+                </svg>
+              </div>
+            </div>
+          </div> -->
+          <div>
+            <div class="branch-grid-item bg-stay-orange">
+              <h3>Bielefeld</h3>
+              <img src="assets/branches/branch_3.jpg" alt="a table in a nice room" />
+              <div>
+                <span>Take me there</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="branch-grid-item bg-stay-purple">
+              <h3>Güterloh</h3>
+              <img src="assets/branches/branch_4.jpg" alt="a table in a nice room" />
+              <div>
+                <span>Take me there</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="branch-grid-item bg-stay-yellow">
+              <h3>Wolfsburg</h3>
+              <img src="assets/branches/branch_5.jpg" alt="a table in a nice room" />
+              <div>
+                <span>Take me there</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="branch-grid-item bg-stay-rosa">
+              <h3>Bremen</h3>
+              <img src="assets/branches/branch_6.jpg" alt="a table in a nice room" />
+              <div>
+                <span>Take me there</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="branch-grid-item bg-stay-red">
+              <h3>Köln</h3>
+              <img src="assets/branches/branch_7.jpg" alt="a table in a nice room" />
+              <div>
+                <span>Take me there</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
